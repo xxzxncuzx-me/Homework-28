@@ -1,7 +1,7 @@
 const arr = [1, 2, 7, 3, 4, 7, 7, 5, 6, 7];
 
 function removeElement(array, item) {
-  if (Array.isArray(array) === false) {
+  if (!Array.isArray(array)) {
     throw new Error('Invalid type of parametr')
   } 
   for (let i = array.length - 1; i >= 0; i--) { 

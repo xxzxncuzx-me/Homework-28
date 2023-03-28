@@ -14,8 +14,6 @@ test('deletion of the non-existent element will not occur, the result is undefin
     const arrayLength = arrayToTest.length
     const itemToDelete = 6
 
-    removeElement(arrayToTest, itemToDelete)
-
     expect(removeElement(arrayToTest, itemToDelete)).toBeUndefined()
     expect(arrayToTest).toHaveLength(arrayLength)
 })
